@@ -3,9 +3,13 @@ title: "Ecological responses to observation error."
 author: "Andrew J. Tyre, Jonathan Rhodes, Tara Martin and Elizabeth VanWormer"
 site: bookdown::bookdown_site
 documentclass: article
+download: ["_main.pdf"]
+output_dir: "docs"
 output:
-  bookdown::gitbook: default
-  bookdown::pdf_book: default
+  bookdown::gitbook: 
+    number_sections: no
+  bookdown::pdf_book:
+    number_sections: no
 ---
 
 # Abstract
