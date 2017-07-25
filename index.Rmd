@@ -1,15 +1,14 @@
 ---
-title: "A Book"
-author: "Frida Gomam"
+title: "Ecological responses to observation error."
+author: "Andrew J. Tyre, Jonathan Rhodes, Tara Martin and Elizabeth VanWormer"
 site: bookdown::bookdown_site
-documentclass: book
+documentclass: article
 output:
   bookdown::gitbook: default
   bookdown::pdf_book: default
 ---
 
-# Hello World
+# Abstract
 
-Hi.
+# Introduction
 
-Bye.
