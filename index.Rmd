@@ -3,7 +3,7 @@ title: "Ecological responses to observation error."
 author: "Andrew J. Tyre, Jonathan Rhodes, Tara Martin and Elizabeth VanWormer"
 site: bookdown::bookdown_site
 documentclass: article
-bibliography: ["vet-obserr.bib"]
+bibliography: vet-obserror.bib
 biblio-style: "apalike"
 link-citations: true
 ---
@@ -22,6 +22,6 @@ The primary issue arising from assuming observations are accurate when they are 
 
 
 
-`r if (knitr:::is_html_output()) '# References {-}'`
+# References {-}
 
 
