@@ -1,7 +1,6 @@
 bookdown::gitbook:
   number_sections: no
   split_bib: FALSE
-  split_by: none
   config:
     download: null
 bookdown::pdf_document2:
