@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ecological responses to observation error.</title>
-  <meta name="description" content="Ecological responses to observation error.">
+  <title>Zero tolerance ecology and the mapping of diseases.</title>
+  <meta name="description" content="Zero tolerance ecology and the mapping of diseases.">
   <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
 
-  <meta property="og:title" content="Ecological responses to observation error." />
+  <meta property="og:title" content="Zero tolerance ecology and the mapping of diseases." />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Ecological responses to observation error." />
+  <meta name="twitter:title" content="Zero tolerance ecology and the mapping of diseases." />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="references.html">
+
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -61,9 +61,13 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#abstract"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#introduction"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#sources-of-zeros"><i class="fa fa-check"></i>Sources of zeros</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#tools-for-mitigating-extra-zeros"><i class="fa fa-check"></i>Tools for mitigating extra zeros</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#special-considerations-for-veterinary-epidemiology"><i class="fa fa-check"></i>Special considerations for Veterinary Epidemiology?</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#future-directions"><i class="fa fa-check"></i>Future directions</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#references"><i class="fa fa-check"></i>References</a></li>
 </ul>
 
       </nav>
@@ -73,7 +77,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Ecological responses to observation error.</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Zero tolerance ecology and the mapping of diseases.</a>
           </h1>
         </div>
 
@@ -81,26 +85,61 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Zero tolerance ecology and the mapping of diseases.</h1>
+<h4 class="author"><em>Andrew J. Tyre, Jonathan Rhodes, Tara Martin and Elizabeth VanWormer</em></h4>
+</div>
+<div id="abstract" class="section level1">
+<h1>Abstract</h1>
+</div>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
 <p>Observations of reality are imprecise and fraught with error from many sources. Arguably, the science of statistics was invented to deal with this fact. In many disciplines, the error in observations can be well described by a Gaussian, or normal, distribution. Statistics is well equipped to deal with those cases! In a few disciplines, errors take on different structures that are not normal (pun intended). Sometimes simply changing the distribution we assume the observations are following is sufficient to regain a powerful suite of tools to draw conclusions. But in a few cases, even that is not sufficient.</p>
 <p>Imagine trying to determine the prevalence of a disease in a population out in nature. The most basic observation, is this individual infected (or has been infected in the past), is a simple binomial variable. Even that observation has errors – there are few (maybe no?) methods for detecting disease in a tissue sample of an individual that have no false positive or negatives. But even if our method is perfect, going from a infected proportion of a sample of individuals back to the prevalence in the population is fraught with difficulty. We must assume that the individuals captured are a random sample of the population; that is, infected and uninfected individuals are both randomly distributed and equally likely to be captured. If we are taking samples from across a series of habitat patches in a fragmented landscape, we may also find that no individuals were captured at a particular patch at all. Does that mean the species is absent, and if not, what is the prevalence in that patch? The answers to that final question depend a great deal on the methods of sampling and how sampling effort is distributed in space.</p>
 <p>A fundamental question in ecology broadly has to do with how species are distributed in space, and which biotic and abiotic characteristics of the environment explain that distribution. The sub-discipline of “species distribution modelling” is the art of answering this question. Historically, the details of how an observation of a species at a particular point in time and space arose were largely ignored (cite some early paper here). Species distribution models were built assuming that the presence and absence of a species at some series of points was known with certainty (or cite some examples here). Although this assumption was widely known to be false, there did not seem to be any methods both testing this assumption and mitigating its effects.</p>
 <p>The primary issue arising from assuming observations are accurate when they are not is bias <span class="citation">(Tyre et al. <a href="#ref-tyre2003improving">2003</a>)</span>. If a species is sometimes missed when present, a false negative, estimates of the effects of covariates on the probability of presence are biased towards zero. <strong>is there a paper looking at effects of false positives in a similar broad way?</strong></p>
+<p>Understanding the distribution of diseases is complicated by the fact that the habitat of the disease, the host population, is even more fragmented than the habitat of the host species.</p>
 <p>A wildlife disease example of habitat mapping is Chronic wasting disease in deer <span class="citation">(Evans et al. <a href="#ref-evans2015_habitat_cwd">2016</a>)</span>. These approaches are being used to prioritize areas for management (citations therein).</p>
 <p>Another example is the distribution of different strains of <em>Toxoplasmosis gondii</em> across the land-sea interface <span class="citation">(VanWormer <a href="#ref-vanwormer2014toxolandsea">2014</a>)</span>.</p>
-<p>Understanding the distribution of diseases is complicated by the fact that the habitat of the disease, the host population, is even more fragmented than the habitat of the host species.</p>
 </div>
-<h3>References</h3>
+<div id="sources-of-zeros" class="section level1">
+<h1>Sources of zeros</h1>
+<p>Summarize <span class="citation">Martin et al. (<a href="#ref-martin2005zero">2005</a>)</span>, and update with more recent thinking. Provide some veterinary examples?</p>
+</div>
+<div id="tools-for-mitigating-extra-zeros" class="section level1">
+<h1>Tools for mitigating extra zeros</h1>
+<p>The primary tool for reducing the bias associated with false negatives is to shift the design of a survey so that sample points are surveyed more than once. Even without more complex statistics, this approach reduces bias by providing more opportunities to detect the species at a given sample point. This does induce a severe tradeoff: visiting the same points more than once reduces the number of points that can be sampled if the amount of effort is held constant. It is possible to identify an optimal level for this tradeoff that depends on the goals of the study <span class="citation">(Field, Tyre, and Possingham <a href="#ref-field2005optimizing">2005</a>, <span class="citation">MacKenzie and Royle (<a href="#ref-mackenzie2005designing">2005</a>)</span>)</span>.</p>
+<p>In the context of mapping a disease, if the sample point is represented by a population of hosts, then sampling &gt; 1 host per point has the same effect as repeat visits. The same tradeoff also exists – the more individuals sampled at one site the fewer different sites can be sampled with a fixed amount of effort.</p>
+</div>
+<div id="special-considerations-for-veterinary-epidemiology" class="section level1">
+<h1>Special considerations for Veterinary Epidemiology?</h1>
+</div>
+<div id="future-directions" class="section level1">
+<h1>Future directions</h1>
+<p>Designs accomodating false positive/negative rates at the pointy end</p>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+
 <div id="refs" class="references">
-<div id="ref-tyre2003improving">
-<p>Tyre, Andrew J, Brigitte Tenhumberg, Scott A Field, Darren Niejalke, Kirsten Parris, and Hugh P Possingham. 2003. “Improving Precision and Reducing Bias in Biological Surveys: Estimating False-Negative Error Rates.” <em>Ecological Applications</em> 13 (6). Ecological Society of America: 1790–1801.</p>
-</div>
 <div id="ref-evans2015_habitat_cwd">
 <p>Evans, Tyler S., Megan S. Kirchgessner, Brian Eyler, Christopher W. Ryan, and W. David Walter. 2016. “Habitat Influences Distribution of Chronic Wasting Disease in White-Tailed Deer.” <em>The Journal of Wildlife Management</em> 80 (2): 284–91. doi:<a href="https://doi.org/10.1002/jwmg.1004">10.1002/jwmg.1004</a>.</p>
 </div>
+<div id="ref-field2005optimizing">
+<p>Field, Scott A, Andrew J Tyre, and Hugh P Possingham. 2005. “Optimizing Allocation of Monitoring Effort Under Economic and Observational Constraints.” <em>Journal of Wildlife Management</em> 69 (2): 473–82.</p>
+</div>
+<div id="ref-mackenzie2005designing">
+<p>MacKenzie, Darryl I, and J Andrew Royle. 2005. “Designing Occupancy Studies: General Advice and Allocating Survey Effort.” <em>Journal of Applied Ecology</em> 42 (6). Wiley Online Library: 1105–14.</p>
+</div>
+<div id="ref-martin2005zero">
+<p>Martin, Tara G, Brendan A Wintle, Jonathan R Rhodes, Petra M Kuhnert, Scott A Field, Samantha J Low-Choy, Andrew J Tyre, and Hugh P Possingham. 2005. “Zero Tolerance Ecology: Improving Ecological Inference by Modelling the Source of Zero Observations.” <em>Ecology Letters</em> 8 (11). Blackwell Science Ltd: 1235–46.</p>
+</div>
+<div id="ref-tyre2003improving">
+<p>Tyre, Andrew J, Brigitte Tenhumberg, Scott A Field, Darren Niejalke, Kirsten Parris, and Hugh P Possingham. 2003. “Improving Precision and Reducing Bias in Biological Surveys: Estimating False-Negative Error Rates.” <em>Ecological Applications</em> 13 (6). Ecological Society of America: 1790–1801.</p>
+</div>
 <div id="ref-vanwormer2014toxolandsea">
 <p>VanWormer, Melissa A. AND Conrad, Elizabeth AND Miller. 2014. “Using Molecular Epidemiology to Track Toxoplasma Gondii from Terrestrial Carnivores to Marine Hosts: Implications for Public Health and Conservation.” <em>PLOS Neglected Tropical Diseases</em> 8 (5). Public Library of Science: 1–14. doi:<a href="https://doi.org/10.1371/journal.pntd.0002852">10.1371/journal.pntd.0002852</a>.</p>
+</div>
 </div>
 </div>
             </section>
@@ -108,8 +147,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
