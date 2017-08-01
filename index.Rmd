@@ -10,6 +10,8 @@ link-citations: true
 
 # Abstract
 
+a paper on why and how to account for imperfect observation processes when modeling the distribution of animal species and how this could be translated into infectious diseases.
+
 # Introduction
 
 Observations of reality are imprecise and fraught with error from many sources. Arguably, the science of statistics was invented to deal with this fact. In many disciplines, the error in observations can be well described by a Gaussian, or normal, distribution. Statistics is well equipped to deal with those cases! In a few disciplines, errors take on different structures that are not normal (pun intended). Sometimes simply changing the distribution we assume the observations are following is sufficient to regain a powerful suite of tools to draw conclusions. But in a few cases, even that is not sufficient. 
