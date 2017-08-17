@@ -22,6 +22,8 @@ A fundamental question in ecology broadly has to do with how species are distrib
 
 The primary issue arising from assuming observations are accurate when they are not is bias [@tyre2003improving]. If a species is sometimes missed when present, a false negative, estimates of the effects of covariates on the probability of presence are biased towards zero. **is there a paper looking at effects of false positives in a similar broad way?**
 
+
+
 Understanding the distribution of diseases is complicated by the fact that the habitat of the disease, the host population, is even more fragmented than the habitat of the host species. 
 
 A wildlife disease example of habitat mapping is Chronic wasting disease in deer [@evans2015_habitat_cwd]. These approaches are being used to prioritize areas for management (citations therein).
@@ -32,13 +34,29 @@ Another example is the distribution of different strains of *Toxoplasmosis gondi
 
 Summarize @martin2005zero, and update with more recent thinking. Provide some veterinary examples?
 
+What are the questions and what kind of data are collected?
+
+Scale of questions?
+
+how do zeros arise? 
+
+how to estimate false negatives? repeat observations?
+
+Pooled sampling of mosquitos - minimum prevalence
+
+infographic / toy examples
+
+What drives detectability in epidemilogical samples and are they different 
+
 # Tools for mitigating extra zeros
 
 The primary tool for reducing the bias associated with false negatives is to shift the design of a survey so that sample points are surveyed more than once. Even without more complex statistics, this approach reduces bias by providing more opportunities to detect the species at a given sample point. This does induce a severe tradeoff: visiting the same points more than once reduces the number of points that can be sampled if the amount of effort is held constant. It is possible to identify an optimal level for this tradeoff that depends on the goals of the study [@field2005optimizing, @mackenzie2005designing]. 
 
 In the context of mapping a disease, if the sample point is represented by a population of hosts, then sampling > 1 host per point has the same effect as repeat visits. The same tradeoff also exists -- the more individuals sampled at one site the fewer different sites can be sampled with a fixed amount of effort. 
 
-# Special considerations for Veterinary Epidemiology?
+Dynamic detection error models -- 
+
+Joint occurrence / co-occurence SDM
 
 # Future directions
 
