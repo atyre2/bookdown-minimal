@@ -10,7 +10,11 @@ link-citations: true
 
 # Abstract
 
-a paper on why and how to account for imperfect observation processes when modeling the distribution of animal species and how this could be translated into infectious diseases.
+A fundamental question in ecology broadly has to do with how species are distributed in space, and which biotic and abiotic characteristics of the environment explain that distribution. Veterinary epidemiology could use the same tools to understand environmental drivers of parasites and diseases. Unfortunately, the ecological and epidemilogical data used to build species distribution models suffers from imperfect detection, creating both false presences and false absences. The ecological community developed a wide range of two-stage models to compensate for these errors. Here we explore how those tools could be used by veterinary epidemiologists to map the prevalence of diseases.
+
+Errors arise from a variety of mechanisms in the data generating process. The sources of errors also vary by the scale of inference. We review the recent ecological literature on error processes. Then we examine common types of epidemiological data through this lens to identify errors of the same type as ecology, as well as errors unique to epidemiological studies. For example, pooled samples used to detect diseases in vector species generate a particular kind of prevalence data with a unique error structure. 
+
+We review the tools developed by ecologists to mitigate the effects of errors, and consider the applicability of these approaches to epidemiological data. For epidemiologists to apply these tools requires changes in the design of surveys to generate the data necessary to support the two stage models. We finish by describing the opportunities for future work created by the intersection of species distribution modelling and disease mapping. 
 
 # Introduction
 
@@ -20,7 +24,7 @@ Imagine trying to determine the prevalence of a disease in a population out in n
 
 A fundamental question in ecology broadly has to do with how species are distributed in space, and which biotic and abiotic characteristics of the environment explain that distribution. The sub-discipline of "species distribution modelling" is the art of answering this question. Historically, the details of how an observation of a species at a particular point in time and space arose were largely ignored (cite some early paper here). Species distribution models were built assuming that the presence and absence of a species at some series of points was known with certainty (or cite some examples here). Although this assumption was widely known to be false, there did not seem to be any methods both testing this assumption and mitigating its effects. 
 
-The primary issue arising from assuming observations are accurate when they are not is bias [@tyre2003improving]. If a species is sometimes missed when present, a false negative, estimates of the effects of covariates on the probability of presence are biased towards zero. **is there a paper looking at effects of false positives in a similar broad way?**
+The primary issue arising from assuming observations are accurate when they are not is bias [@tyre2003improving]. If a species is sometimes missed when present, a false negative, estimates of the effects of covariates on the probability of presence are biased towards zero. **is there a paper looking at effects of false positives in a similar broad way? Yes, follow up on blog post from Jonathan.**
 
 
 
