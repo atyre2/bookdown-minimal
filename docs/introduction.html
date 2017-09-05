@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Zero tolerance ecology and the mapping of diseases.</title>
   <meta name="description" content="Zero tolerance ecology and the mapping of diseases.">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
 
   <meta property="og:title" content="Zero tolerance ecology and the mapping of diseases." />
   <meta property="og:type" content="book" />
@@ -65,7 +65,6 @@
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
 <li class="chapter" data-level="" data-path="sources-of-zeros.html"><a href="sources-of-zeros.html"><i class="fa fa-check"></i>Sources of zeros</a></li>
 <li class="chapter" data-level="" data-path="tools-for-mitigating-extra-zeros.html"><a href="tools-for-mitigating-extra-zeros.html"><i class="fa fa-check"></i>Tools for mitigating extra zeros</a></li>
-<li class="chapter" data-level="" data-path="special-considerations-for-veterinary-epidemiology.html"><a href="special-considerations-for-veterinary-epidemiology.html"><i class="fa fa-check"></i>Special considerations for Veterinary Epidemiology?</a></li>
 <li class="chapter" data-level="" data-path="future-directions.html"><a href="future-directions.html"><i class="fa fa-check"></i>Future directions</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
@@ -90,7 +89,7 @@
 <p>Observations of reality are imprecise and fraught with error from many sources. Arguably, the science of statistics was invented to deal with this fact. In many disciplines, the error in observations can be well described by a Gaussian, or normal, distribution. Statistics is well equipped to deal with those cases! In a few disciplines, errors take on different structures that are not normal (pun intended). Sometimes simply changing the distribution we assume the observations are following is sufficient to regain a powerful suite of tools to draw conclusions. But in a few cases, even that is not sufficient.</p>
 <p>Imagine trying to determine the prevalence of a disease in a population out in nature. The most basic observation, is this individual infected (or has been infected in the past), is a simple binomial variable. Even that observation has errors – there are few (maybe no?) methods for detecting disease in a tissue sample of an individual that have no false positive or negatives. But even if our method is perfect, going from a infected proportion of a sample of individuals back to the prevalence in the population is fraught with difficulty. We must assume that the individuals captured are a random sample of the population; that is, infected and uninfected individuals are both randomly distributed and equally likely to be captured. If we are taking samples from across a series of habitat patches in a fragmented landscape, we may also find that no individuals were captured at a particular patch at all. Does that mean the species is absent, and if not, what is the prevalence in that patch? The answers to that final question depend a great deal on the methods of sampling and how sampling effort is distributed in space.</p>
 <p>A fundamental question in ecology broadly has to do with how species are distributed in space, and which biotic and abiotic characteristics of the environment explain that distribution. The sub-discipline of “species distribution modelling” is the art of answering this question. Historically, the details of how an observation of a species at a particular point in time and space arose were largely ignored (cite some early paper here). Species distribution models were built assuming that the presence and absence of a species at some series of points was known with certainty (or cite some examples here). Although this assumption was widely known to be false, there did not seem to be any methods both testing this assumption and mitigating its effects.</p>
-<p>The primary issue arising from assuming observations are accurate when they are not is bias <span class="citation">(Tyre et al. <a href="references.html#ref-tyre2003improving">2003</a>)</span>. If a species is sometimes missed when present, a false negative, estimates of the effects of covariates on the probability of presence are biased towards zero. <strong>is there a paper looking at effects of false positives in a similar broad way?</strong></p>
+<p>The primary issue arising from assuming observations are accurate when they are not is bias <span class="citation">(Tyre et al. <a href="references.html#ref-tyre2003improving">2003</a>)</span>. If a species is sometimes missed when present, a false negative, estimates of the effects of covariates on the probability of presence are biased towards zero. <strong>is there a paper looking at effects of false positives in a similar broad way? Yes, follow up on blog post from Jonathan.</strong></p>
 <p>Understanding the distribution of diseases is complicated by the fact that the habitat of the disease, the host population, is even more fragmented than the habitat of the host species.</p>
 <p>A wildlife disease example of habitat mapping is Chronic wasting disease in deer <span class="citation">(Evans et al. <a href="references.html#ref-evans2015_habitat_cwd">2016</a>)</span>. These approaches are being used to prioritize areas for management (citations therein).</p>
 <p>Another example is the distribution of different strains of <em>Toxoplasmosis gondii</em> across the land-sea interface <span class="citation">(VanWormer <a href="references.html#ref-vanwormer2014toxolandsea">2014</a>)</span>.</p>
@@ -112,7 +111,7 @@
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
 <script>
-require(["gitbook"], function(gitbook) {
+gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
 "github": false,

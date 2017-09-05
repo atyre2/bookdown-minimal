@@ -8,6 +8,8 @@ biblio-style: "apalike"
 link-citations: true
 ---
 
+
+
 # Abstract
 
 A fundamental question in ecology broadly has to do with how species are distributed in space, and which biotic and abiotic characteristics of the environment explain that distribution. Veterinary epidemiology could use the same tools to understand environmental drivers of parasites and diseases. Unfortunately, the ecological and epidemilogical data used to build species distribution models suffers from imperfect detection, creating both false presences and false absences. The ecological community developed a wide range of two-stage models to compensate for these errors. Here we explore how those tools could be used by veterinary epidemiologists to map the prevalence of diseases.
