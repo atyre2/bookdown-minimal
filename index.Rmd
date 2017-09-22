@@ -8,6 +8,10 @@ biblio-style: "apalike"
 link-citations: true
 ---
 
+```{r setup, include=FALSE}
+library(tidyverse)
+library(huxtable)
+```
 
 
 # Abstract
@@ -34,31 +38,57 @@ Understanding the distribution of diseases is complicated by the fact that the h
 
 A wildlife disease example of habitat mapping is Chronic wasting disease in deer [@evans2015_habitat_cwd]. These approaches are being used to prioritize areas for management (citations therein).
 
+We must make predictions [@houlahan2017priority] to demonstrate understanding of these systems. Quantitative predictions are risky, and to make them we need statistical and mathematical models.
+
 Another example is the distribution of different strains of *Toxoplasmosis gondii* across the land-sea interface [@vanwormer2014toxolandsea]. 
 
-# Sources of zeros
+# Sources of extra zeros
 
 Summarize @martin2005zero, and update with more recent thinking. Provide some veterinary examples?
 
+We expect to measure zero in ecology. Whether that zero is in the context of a presence/absence measurement, or a count distribution, zeros are a natural and expected part of ecology. However, zeros sometimes form the majority of the observations, and we start to encounter problems building predictive models on that basis. Zeros arise from a number of mechanisms that vary according the scale (extent and resolution) of a study. So called 'zero-inflated' data can arise from the true process being studied. But it can also arise from the process used to collect the data, the observation process. 
+
+Martin et al [-@martin2005zero] categorized excess zeros into four sources, depending on whether they are true zeros (part of the biological process), or false zeros (arising from the observation process). 
+
+```{r source-of-zeros-table, echo=FALSE}
+source_of_zeros <- tribble(
+  ~source, ~definition,
+  "Type of Zero",     "Definition",
+    "True Zero",       "Species does not occur at a site because of the ecological process, or effect, under study.",
+  "",                "Species does not saturate it's entire suitable habitat, by chance.",
+  "False Zero",      "Species occurs at a site, but is not present during the survey period.",
+  "",                "Species occurs at a site and is present, but is cryptic and difficult to detect."
+)
+ht <- huxtable(source_of_zeros)
+caption(ht) <- "Types of zeros arising in ecological data when a site or patch of habitat is the focus of prediction."
+theme_article(ht)
+```
+
+True zeros [Table 1] arise when the species is absent from the unit of observation for ecological or epidemilogical reasons. When sampling a patch of habitat containing a population of hosts, a true zero means the prevalence is zero. This could arise because the habitat patch is empty of potential hosts, or the hosts present are unsuitable, or the parasite may not have dispersed to the patch yet. 
+
+False zeros arise from characteristics of the observation process. At ecological scales, one type of zero arises when the unit of observation is smaller than the home range of the species in question. The site or patch is used by the species, but at the particular time of the survey individuals of that species are in a different part of their home range, and impossible to detect. This type of false zero is not an issue for parasites, but it is a possible problem when surveying hosts. A second problem arises when the species is present during the survey, but goes undetected. For epidemiological surveys this arises if the method used to detect the parasite (or past infection of the parasite), has a non-zero probability of detecting the parasite in a particular sample. A method with low sensitivity has a high probability of a false negative. In some cases we have an estimate of the sensitivity of a method, but this is (to my knowledge) rarely used directly in species distribution modelling.  
+
 What are the questions and what kind of data are collected?
-
-Scale of questions?
-
-how do zeros arise? 
-
-how to estimate false negatives? repeat observations?
-
 Pooled sampling of mosquitos - minimum prevalence
+What drives detectability in epidemilogical samples and are they different 
+## Scale of questions
+
+There are two important spatial scales to consider. First, what is the resolution of the ecological / epidemiological process? Is the ecology about a population within a discrete patch of habitat, or about the larger metapopulation operating across many patches of habitat. 
+
+
+
 
 infographic / toy examples
 
-What drives detectability in epidemilogical samples and are they different 
+
 
 # Tools for mitigating extra zeros
 
 The primary tool for reducing the bias associated with false negatives is to shift the design of a survey so that sample points are surveyed more than once. Even without more complex statistics, this approach reduces bias by providing more opportunities to detect the species at a given sample point. This does induce a severe tradeoff: visiting the same points more than once reduces the number of points that can be sampled if the amount of effort is held constant. It is possible to identify an optimal level for this tradeoff that depends on the goals of the study [@field2005optimizing, @mackenzie2005designing]. 
 
 In the context of mapping a disease, if the sample point is represented by a population of hosts, then sampling > 1 host per point has the same effect as repeat visits. The same tradeoff also exists -- the more individuals sampled at one site the fewer different sites can be sampled with a fixed amount of effort. 
+
+how to estimate false negatives? repeat observations?
 
 Dynamic detection error models -- 
 
