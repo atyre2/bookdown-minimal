@@ -20,7 +20,7 @@ A fundamental question in ecology broadly has to do with how species are distrib
 
 Errors arise from a variety of mechanisms in the data generating process. The sources of errors also vary by the scale of inference. We review the recent ecological and epidemiological literature on error processes. Then we examine common types of epidemiological data through this lens to identify errors of the same type as ecology, as well as errors unique to epidemiological studies. For example, pooled samples used to detect pathogens in vector species generate a particular kind of prevalence data with a unique error structure. 
 
-We review the tools developed by ecologists to mitigate the effects of errors, and consider the applicability of these approaches to epidemiological data. For epidemiologists to apply these tools requires changes in the design of surveys to generate the data necessary to support two stage models. We finish by describing the opportunities for future work created by the intersection of species distribution modelling and pathogen mapping. 
+We review the tools developed by ecologists to mitigate the effects of errors, and consider the applicability of these approaches to epidemiological data. For epidemiologists to apply these tools requires changes in study design to generate the data necessary to support two stage models. We finish by describing the opportunities for future work created by the intersection of species distribution modelling and pathogen mapping. 
 
 # Introduction
 
@@ -54,7 +54,7 @@ source_of_zeros <- tribble(
   "Type of Zero",     "Definition",
     "True Zero",       "Species does not occur at a site because of the ecological process, or effect, under study.",
   "",                "Species does not saturate it's entire suitable habitat, by chance.",
-  "False Zero",      "Species occurs at a site, but is not present during the survey period.",
+  "False Zero",      "Species occurs at a site, but is not present during the study period.",
   "",                "Species occurs at a site and is present, but is cryptic and difficult to detect."
 )
 ht <- huxtable(source_of_zeros)
@@ -64,7 +64,7 @@ theme_article(ht)
 
 True zeros [Table 1] arise when the species is absent from the unit of observation for ecological or epidemiological reasons. When sampling a patch of habitat containing a population of hosts, a true zero means the prevalence is zero. This could arise because the habitat patch is empty of potential hosts, or the hosts present are unsuitable, or the parasite may not have dispersed to the patch yet. 
 
-False zeros arise from characteristics of the observation process. At ecological scales, one type of zero arises when the unit of observation is smaller than the home range of the species in question. The site or patch is used by the species, but at the particular time of the survey individuals of that species are in a different part of their home range, and impossible to detect. This type of false zero is not an issue for parasites, but it is a possible problem when surveying hosts. A second problem arises when the species is present during the survey, but goes undetected. For epidemiological surveys this arises if the method used to detect the parasite (or past infection of the parasite), has a non-zero probability of detecting the parasite in a particular sample. A method with low sensitivity has a high probability of a false negative. In some cases we have an estimate of the sensitivity of a method, but this is (to my knowledge) rarely used directly in species distribution modelling.  
+False zeros arise from characteristics of the observation process. At ecological scales, one type of zero arises when the unit of observation is smaller than the home range of the species in question. The site or patch is used by the species, but at the particular time of the study individuals of that species are in a different part of their home range, and impossible to detect. This type of false zero is not an issue for parasites, but it is a possible problem when studying hosts. A second problem arises when the species is present during the study, but goes undetected. For epidemiological studys this arises if the method used to detect the parasite (or past infection of the parasite), has a non-zero probability of detecting the parasite in a particular sample. A method with low sensitivity has a high probability of a false negative. In some cases we have an estimate of the sensitivity of a method, but this is (to my knowledge) rarely used directly in species distribution modelling.  
 
 What are the questions and what kind of data are collected?
 Pooled sampling of mosquitoes - minimum prevalence
@@ -78,7 +78,7 @@ infographic / toy examples
 
 # Tools for mitigating extra zeros
 
-The primary tool for reducing the bias associated with false negatives is to shift the design of a survey so that sample points are surveyed more than once. Even without more complex statistics, this approach reduces bias by providing more opportunities to detect the species at a given sample point. This does induce a severe trade-off: visiting the same points more than once reduces the number of points that can be sampled if the amount of effort is held constant. It is possible to identify an optimal level for this trade off that depends on the goals of the study [@field2005optimizing, @mackenzie2005designing]. 
+The primary tool for reducing the bias associated with false negatives is to shift the design of a study so that sample points are studyed more than once. Even without more complex statistics, this approach reduces bias by providing more opportunities to detect the species at a given sample point. This does induce a severe trade-off: visiting the same points more than once reduces the number of points that can be sampled if the amount of effort is held constant. It is possible to identify an optimal level for this trade off that depends on the goals of the study [@field2005optimizing, @mackenzie2005designing]. 
 
 In the context of mapping a , if the sample point is represented by a population of hosts, then sampling > 1 host per point has the same effect as repeat visits. The same trade off also exists -- the more individuals sampled at one site the fewer different sites can be sampled with a fixed amount of effort. This is especially true if analyzing a sample for the presence of a pathogen is expensive. In herd and vector surveillance samples are often pooled across individuals to reduce costs, but this comes at the expense of some information.
 
